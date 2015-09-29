@@ -1,0 +1,23 @@
+{
+  "name": "node_wars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://arborQ@github.com/arborQ/node_wars.git"
+  },
+  "author": "Lukasz Wojcik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arborQ/node_wars/issues"
+  },
+  "homepage": "https://github.com/arborQ/node_wars#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
