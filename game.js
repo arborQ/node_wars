@@ -1,3 +1,5 @@
+import {  arborBot } from './bots/ArborBot'
+
 var express = require('express');
 var settings = require('./package')
 var q = require('q');
@@ -19,6 +21,7 @@ function *foo(times) {
 
 
 router.get('/Info', (req, res, next) => {
+  arborBot();
   res.status(200).json({
     Name : `NodeBot_v${settings.version}`,
     AvatarUrl : "https://node-os.com/images/nodejs.png",
