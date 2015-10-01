@@ -21,18 +21,16 @@ function *foo(times) {
 
 
 router.get('/Info', (req, res, next) => {
-  arborBot();
-  res.status(200).json({
-    Name : `NodeBot_v${settings.version}`,
-    AvatarUrl : "https://node-os.com/images/nodejs.png",
-    GameType : "AntWars",
-    Description : `node bot in ${settings.version} version`
-  });
+  var bot = new arborBot();
+  res.status(200).json(bot.info);
   next();
 });
 
 router.post('/PerformNextMove', (req, res, next) =>{
-
+  console.log('move?');
+  var bot = new arborBot();
+  res.status(200).json(bot.action());
+  next();
 });
 
 module.exports = router;

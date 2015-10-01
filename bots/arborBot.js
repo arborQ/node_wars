@@ -1,4 +1,7 @@
 import { bot } from './botBase';
-export var arborBot = () => {
-  return bot('arbor');
+export class arborBot extends bot {
+  constructor(){
+    console.log('constructor arborBot');
+    super('arbor');
+  }
 };

@@ -1,11 +1,11 @@
 {
   "name": "node_wars",
   "version": "1.0.0",
-  "description": "",
+  "description": "API client for tanks",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/api"
+    "start": "babel-node ./bin/api"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/arborQ/node_wars#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "babel": "^5.8.23"
   },
   "devDependencies": {
+    "babel-core": "^5.8.25",
     "q": "^1.4.1",
     "traceur": "0.0.91",
-    "traceur-source-maps": "^1.0.6"
+    "traceur-source-maps": "^1.0.6",
+    "util": "^0.10.3"
   }
 }
