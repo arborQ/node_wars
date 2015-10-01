@@ -1,29 +1,34 @@
-var moveAction = ({ action, direction }) => {
-  if(!action){
-    action = {};
+class moveAction {
+  constructor(action, direction){
+    if(!action){
+      action = {};
+    }
+
+    this.Direction = direction;
+    this.Action = 'None';
   }
-
-  action.Direction = direction;
-  action.Action = 'None';
-  return action;
 };
 
-export var moveUp = (action) => {
-  this.prototype = new moveAction(action, 'Up');
-  return this;
+export class moveUp extends moveAction {
+  constructor(action){
+    super(action, 'Up')
+  }
 };
 
-export var moveDown = (action) => {
-  this.prototype = new moveAction(action, 'Down');
-  return this;
+export class moveDown extends moveAction {
+  constructor(action){
+    super(action, 'Down')
+  }
 };
 
-export var moveLeft = (action) => {
-  this.prototype = new moveAction(action, 'Left');
-  return this;
+export class moveLeft extends moveAction {
+  constructor(action){
+    super(action, 'Left')
+  }
 };
 
-export var moveRight = (action) => {
-  this.prototype = new moveAction(action, 'Right');
-  return this;
+export class moveRight extends moveAction {
+  constructor(action){
+    super(action, 'Right')
+  }
 };

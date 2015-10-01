@@ -26,6 +26,13 @@ router.get('/Info', (req, res, next) => {
   next();
 });
 
+router.get('/getNextMove', (req, res, next) =>{
+  console.log('move?');
+  var bot = new arborBot();
+  res.status(200).json(bot.action());
+  next();
+});
+
 router.post('/PerformNextMove', (req, res, next) =>{
   console.log('move?');
   var bot = new arborBot();

@@ -1,15 +1,6 @@
-// var traceur = require('traceur')
-// require('traceur-source-maps').install(traceur);
-// traceur.require.makeDefault(function (filePath) {
-//   return !~filePath.indexOf('node_modules')
-// })
-
-
 var express = require('express');
 var app = express();
-
 var game = require('../game')
-//require("babel-core").transform(game);
 
 console.log('game');
 app.use('/api/game', game);
@@ -18,6 +9,7 @@ app.get('/', function (req, res, next) {
   res.send('Hello World!');
   next();
 });
+
 var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;

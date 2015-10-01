@@ -1,7 +1,7 @@
 {
   "name": "node_wars",
   "version": "1.0.0",
-  "description": "API client for tanks",
+  "description": "API client for TankBlaster",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,11 +17,9 @@
     "url": "https://github.com/arborQ/node_wars/issues"
   },
   "homepage": "https://github.com/arborQ/node_wars#readme",
-  "dependencies": {
-    "express": "^4.13.3",
-    "babel": "^5.8.23"
-  },
   "devDependencies": {
+    "express": "^4.13.3",
+    "babel": "^5.8.23",
     "babel-core": "^5.8.25",
     "q": "^1.4.1",
     "traceur": "0.0.91",
