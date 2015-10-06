@@ -96,8 +96,7 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 
 :: 2. Select node version
 call :SelectNodeVersion
-echo 'gogogogoogogoog :)'
-echo %DEPLOYMENT_TARGET%
+
 :: 3. Install npm packages
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
@@ -137,3 +136,4 @@ exit /b 1
 :end
 endlocal
 echo Finished successfully.
+npm start
