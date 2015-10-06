@@ -2,9 +2,7 @@
   "name": "node_wars",
   "version": "1.0.0",
   "description": "API client for TankBlaster",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www"
   },
   "repository": {
@@ -27,8 +25,5 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
-  },
-  "dependencies": {
-    "babel": "^5.8.23"
   }
 }
