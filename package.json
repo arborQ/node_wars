@@ -2,9 +2,6 @@
   "name": "node_wars",
   "version": "1.0.0",
   "description": "API client for TankBlaster",
-  "engines": {
-    "node": "4.1.0"
-  },
   "scripts": {
     "start": "node ./bin/www"
   },
