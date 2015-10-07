@@ -14,7 +14,7 @@
   },
   "author": "Lukasz Wojcik",
   "license": "ISC",
-  "bugs": {
+  "bugs": { 
     "url": "https://github.com/arborQ/node_wars/issues"
   },
   "homepage": "https://github.com/arborQ/node_wars#readme",
